@@ -1,0 +1,322 @@
+/* ===== ESTILO GERAL ===== */
+/* Define aparência padrão do site */
+body {
+    background-color: white; /* Fundo claro padrão */
+    margin: 0; /* Remove margens do navegador */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+    text-align: center; /* Centraliza textos */
+}
+
+/* ===== TÍTULO ===== */
+/* Estilo do nome principal no topo */
+h1 {
+    background-color: #F2A0B6;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 50%;
+}
+
+/* ===== MENU ===== */
+/* Menu fixo no canto superior direito */
+.menu {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    gap: 25px;
+    z-index: 1000; /* Garante que fique acima dos outros elementos */
+}
+
+/* Estilo dos links do menu */
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.3s; /* Suaviza o efeito hover */
+}
+
+/* Efeito ao passar o mouse no menu */
+.menu a:hover {
+    background-color: #F2A0B6;
+    color: white;
+}
+
+/* ===== SEÇÕES ===== */
+/* Espaçamento interno das seções */
+section {
+    padding: 80px 20px;
+}
+
+/* Títulos das seções */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== IMAGEM PERFIL ===== */
+/* Foto circular de perfil */
+section img {
+    width: 250px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    margin-bottom: 20px;
+}
+
+/* ===== SOBRE MIM ===== */
+/* Caixa de destaque com gradiente */
+.destaque-sobre {
+    background-image: linear-gradient(to right, #f7a2b8, #deb8c7);
+    color: white;
+    padding: 25px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* ===== FORMAÇÃO ===== */
+/* Remove marcadores da lista */
+.lista-formacao {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Cada item da formação */
+.lista-formacao li {
+    background-color: #f7a2b8;
+    color: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    line-height: 1.6;
+}
+
+/* Nome da instituição */
+.lista-formacao strong {
+    font-size: 16px;
+}
+
+/* Datas */
+.lista-formacao span {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ===== FORMULÁRIO CONTATO ===== */
+/* Estrutura do formulário */
+#formContato {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campos de entrada */
+#formContato input,
+#formContato textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Área da mensagem */
+#formContato textarea {
+    resize: none; /* Impede redimensionamento */
+    height: 100px;
+}
+
+/* Botão enviar */
+#formContato button {
+    background-color: #F2A0B6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Hover botão enviar */
+#formContato button:hover {
+    background-color: #d8839b;
+}
+
+/* ===== RODAPÉ ===== */
+/* Área final do site */
+footer {
+    background-color: #F2A0B6;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ===== ROLAGEM SUAVE ===== */
+/* Suaviza a rolagem ao clicar no menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== RESPONSIVO ===== */
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+
+    h1 {
+        max-width: 90%;
+        font-size: 18px;
+    }
+
+    .menu {
+        position: static; /* Menu deixa de ser fixo */
+        justify-content: center;
+        margin: 15px 0;
+        gap: 15px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+
+    section img {
+        width: 120px;
+    }
+
+    .destaque-sobre {
+        font-size: 15px;
+    }
+
+    #formContato {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* ===================================================== */
+/* ===== BOTÃO DE TEMA (CLARO / ESCURO) ===== */
+/* ===================================================== */
+
+/* ⚠️ OBSERVAÇÃO IMPORTANTE:
+   O botão #btnTema aparece repetido várias vezes.
+   Isso NÃO quebra o código.
+   O CSS funciona por sobrescrita:
+   👉 a ÚLTIMA definição é a que vale.
+*/
+
+/* Primeira definição visual do botão */
+#btnTema {
+    background-color: #F2A0B6;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Hover inicial */
+#btnTema:hover {
+    background-color: #d8839b;
+}
+
+/* Segunda redefinição:
+   Remove fundo para permitir uso com emoji */
+#btnTema {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* Hover mantém destaque */
+#btnTema:hover {
+    background-color: #F2A0B6;
+}
+
+/* Terceira redefinição (final e válida):
+   Define layout com emoji + texto lado a lado */
+#btnTema {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex; /* Alinha emoji e texto */
+    align-items: center;
+    gap: 8px; /* Espaço entre emoji e texto */
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* Hover final */
+#btnTema:hover {
+    background-color: #F2A0B6;
+}
+
+/* Emoji do botão de tema */
+.emoji-tema {
+    font-size: 28px; /* Emoji maior para destaque visual */
+}
+
+/* Texto "Tema" ao lado do emoji */
+.texto-tema {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+/* ===== TEMA ESCURO ===== */
+/* Classe ativada via JavaScript */
+.tema-escuro {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Ajustes no tema escuro */
+.tema-escuro h1,
+.tema-escuro footer {
+    background-color: #333;
+}
+
+.tema-escuro .menu a,
+.tema-escuro .texto-tema {
+    color: white;
+}
+
+.tema-escuro .destaque-sobre,
+.tema-escuro .lista-formacao li {
+    background-color: #444;
+    background-image: none;
+}
+
+.tema-escuro input,
+.tema-escuro textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* ===== LINK LINKEDIN ===== */
+/* Estilo do link no rodapé */
+.link-linkedin {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover no link LinkedIn */
+.link-linkedin:hover {
+    text-decoration: underline;
+}

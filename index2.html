@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milene Justo - Estudante de Tecnologia</title>
+    <link rel="stylesheet" href="style_site.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <header>
+        
+        <h1>Milene Justo - Estudante de Tecnologia</h1>
+        <button id="btnTema">
+    <span class="emoji-tema">☀️</span>
+    <span class="texto-tema">Tema</span>
+</button>
+
+    </header>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre">
+        <img src="foto milene2.png" alt="Minha foto">
+
+        <h2>Sobre mim</h2>
+
+        <p class="destaque-sobre">
+            Profissional proativa e orientada para resultados, apaixonada por desafios e aprendizado contínuo.
+            Com uma sólida capacidade de adaptação.
+
+            Sou estudante de tecnologia, o que amplia minha visão analítica e estratégica, permitindo integrar
+            inovação às práticas profissionais. Tenho conhecimento em KPIs e apresentação estratégica, habilidades
+            que fortalecem minha capacidade de mensurar desempenho e comunicar resultados de forma clara e impactante.
+
+            Minha trajetória profissional é marcada pelo senso de urgência, priorizando a eficácia para atingir
+            metas com excelência.
+        </p>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao">
+        <h2>Formação</h2>
+
+        <ul class="lista-formacao">
+            <li>
+                <strong>UNINTER Centro Universitário Internacional</strong><br>
+                Análise e Desenvolvimento de Sistemas<br>
+                <span>05/2025 – cursando</span>
+            </li>
+
+            <li>
+                <strong>Cisco Networking Academy</strong><br>
+                Introdução à Cibersegurança<br>
+                <span>Finalizado em Julho/2025</span>
+            </li>
+
+            <li>
+                <strong>Impacta Tecnologia</strong><br>
+                Excel – Módulo I<br>
+                <span>Ago/2022 – Nov/2022</span>
+            </li>
+
+            <li>
+                <strong>Macrobyte</strong><br>
+                Auxiliar Veterinária<br>
+                <span>Jan/2019 – Nov/2020</span>
+            </li>
+
+            <li>
+                <strong>Polly Formação Profissional em Tecnologia</strong><br>
+                Inglês Básico<br>
+                <span>Finalizado em 2015</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- CONTATO (FORMULÁRIO COM JS) -->
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <form id="formContato">
+            <input type="email" id="email" placeholder="Seu e-mail">
+            <input 
+            type="tel" 
+            id="telefone" 
+            placeholder="(11) 99999-9999"
+            maxlength="15"
+>
+
+            <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Site criado por Milene Justo &#x1F60A;</p>
+        <a href="https://www.linkedin.com/in/milene-justo12/" target="_blank" rel="external">Linkedin</a> 
+    </footer>
+<!-- Ao clicar com botão esquerdo do mouse se a pessoa não estiver logada, o LinkedIn pode exigir login. 
+ Eu indico a clicar no link com o botão SCROLL do mouse que vai direto -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
